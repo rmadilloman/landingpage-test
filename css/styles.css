@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(27,40,56); /* Dark blue for Steam theme */ 
+    color: rgb(199, 213, 224);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgb(23,26,33); /* Darker blue for header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color:rgb(255,255,255);
+}
+
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(102,192,244); /* Steam blue accent */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: rgb(199, 213, 224);
+}
+
+.game-images {
+    position: relative;
+    display: inline-block;
+    max-width: 600px;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main-image {
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 35px;
+    left: 105px;
+    width: 80%;
+    z-index: 2;
+}
+
+.stats {
+    font-size: 1.1rem;
+    color: rgb(184,188,191);
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 10px;
+    background-color: rgb(102,192,244);
+    color: rgb(23,26,33);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Footer */
+footer {
+    position: fixed;
+    background-color: rgb(23,26,33);
+    padding: 20px;
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #c7d5e0;
+}
+
+/* Media queries */
+
+@media (max-width: 780px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .game-images {
+        max-width: 100%;
+    }
+
+    .overlay-image {
+        top: 10px;
+        left: 10px;
+        width: 70%;
+    }
+
+    .cta-button {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 10px 15px;
+    }
+}
+
+@media (hover:hover) {
+    .cta-button:hover {
+        background-color: rgb(50, 121, 175);
+        color:rgb(255, 255, 255);
+    }
+}
