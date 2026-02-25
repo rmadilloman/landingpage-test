@@ -106,7 +106,14 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #c7d5e0;
+
+    
 }
+.policy-link {
+    text-decoration: none;
+    color:rgb(184,188,191);
+}
+
 
 /* Media queries */
 
